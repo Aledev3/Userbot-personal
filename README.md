@@ -3,7 +3,7 @@ This code is free it is not a code that is very long
 
 
 ### Self Host
-## Termux or Heroku
+- Termux or Heroku
 
 
 ## Description
