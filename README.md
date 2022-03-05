@@ -2,8 +2,8 @@
 This code is free it is not a code that is very long
 
 
-### Self Host 
-Termux or Heroku
+### Self Host
+## Termux or Heroku
 
 
 ## Description
