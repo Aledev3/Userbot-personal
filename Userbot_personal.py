@@ -5,12 +5,14 @@ from datetime import datetime
 
 import os
 import asyncio
+import telethon
 
 
-API_ID = 1290498
-API_HASH ="aah8584hd"
+API_ID = 12416208
+API_HASH ="aa15730cc72680d05bbcd400f3476081"
 
 userbot_personal = TelegramClient("userbot_personal", API_ID, API_HASH)
+
 
 
 
@@ -61,9 +63,6 @@ async def usbot():
     if event.text == ".d":
       await event.edit("d lol")
 
-  @botme.on(events.NewMessage(outgoing=False, pattern=r"\/start"))
-  async def startbot(e):
-    await e.respond("ciao, sono online!")
 
 
   #@userbot_personal.on(events.Raw)
@@ -83,6 +82,12 @@ async def usbot():
     await event.delete()
     d = await event.get_reply_message()
     await d.delete()
+
+  @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.version_telethon"))
+  async def versiontelethon(e):
+    g = (telethon.__version__)
+    await e.edit(f"version telethon -> {g}")
+
 
   
 print("Userbot Personal Online!")
