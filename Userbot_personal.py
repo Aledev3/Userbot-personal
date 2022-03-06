@@ -1,13 +1,14 @@
 from telethon import TelegramClient, events, sync
 from telethon import Button
 from telethon import functions, types
+from datetime import datetime
 
 import os
 import asyncio
 
 
-API_ID = 1275
-API_HASH ="aa151"
+API_ID = 12995883
+API_HASH ="aa884hjs"
 
 userbot_personal = TelegramClient("userbot_personal", API_ID, API_HASH)
 
@@ -37,7 +38,24 @@ async def usbot():
     await asyncio.sleep(3)
 
 
+  @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.reboot"))
+  async def reboot(event):
+    await event.delete()
+    import os, sys, threading
+    os.system("clear")
+  
+    os.execl(sys.executable, sys.executable, *sys.argv)
+    thereading.Thread(target=_restart, args=(bot, msg)).start()
 
+  @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r".ping"))
+  async def _ping(event):
+    if event.fwd_from:
+        return
+    start = datetime.now()
+    await event.edit("**Pong!**")
+    end = datetime.now()
+    ms = (end - start).microseconds / 1000
+    await event.edit("**Pong!**\n`{}`".format(ms))
 
 
   
