@@ -8,8 +8,8 @@ import asyncio
 import telethon
 
 
-API_ID = 12416208
-API_HASH ="aa15730cc72680d05bbcd400f3476081"
+API_ID = 77362
+API_HASH ="aa1iy8"
 
 userbot_personal = TelegramClient("userbot_personal", API_ID, API_HASH)
 
