@@ -27,7 +27,7 @@ async def nameprofilyou(event):
     result = await userbot_personal(functions.account.UpdateProfileRequest(
           first_name=x,
       ))
-    await event.edit(f"nome messo come **{x}**")
+    await event.edit(f"name put as **{x}**")
 
 
 
