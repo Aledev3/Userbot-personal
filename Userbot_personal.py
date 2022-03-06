@@ -7,12 +7,10 @@ import os
 import asyncio
 
 
-API_ID = 12995883
-API_HASH ="aa884hjs"
+API_ID = 1290498
+API_HASH ="aah8584hd"
 
 userbot_personal = TelegramClient("userbot_personal", API_ID, API_HASH)
-
-
 
 
 
@@ -21,7 +19,7 @@ async def usbot():
   
   @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.status"))
   async def statususerbot(event):
-    await event.edit("userbot online")
+    await event.edit("userbot personal online")
 
   @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.name"))
   async def nameprofilyou(event):
@@ -47,6 +45,7 @@ async def usbot():
     os.execl(sys.executable, sys.executable, *sys.argv)
     thereading.Thread(target=_restart, args=(bot, msg)).start()
 
+
   @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r".ping"))
   async def _ping(event):
     if event.fwd_from:
@@ -57,6 +56,33 @@ async def usbot():
     ms = (end - start).microseconds / 1000
     await event.edit("**Pong!**\n`{}`".format(ms))
 
+  @userbot_personal.on(events.NewMessage(outgoing=True))
+  async def t_p(event):
+    if event.text == ".d":
+      await event.edit("d lol")
+
+  @botme.on(events.NewMessage(outgoing=False, pattern=r"\/start"))
+  async def startbot(e):
+    await e.respond("ciao, sono online!")
+
+
+  #@userbot_personal.on(events.Raw)
+  #async def handler(update):
+    # Print all incoming updates
+    #await userbot_personal.send_message("me",update.stringify())
+
+  @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.delm"))
+  async def _delm(event):
+    await event.delete()
+    d = await event.get_reply_message()
+    await d.delete()
+    await event.respond("deleted message")
+
+  @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.del"))
+  async def _delm(event):
+    await event.delete()
+    d = await event.get_reply_message()
+    await d.delete()
 
   
 print("Userbot Personal Online!")
