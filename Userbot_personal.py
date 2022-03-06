@@ -1,5 +1,7 @@
 from telethon import TelegramClient, events, sync
 from telethon import Button
+from telethon import functions, types
+
 import os
 
 
@@ -15,10 +17,17 @@ userbot_personal = TelegramClient("userbot_personal", API_ID, API_HASH)
 async def usbot():
 
 
-@userbot_personal.on(events.NewMessage(outgoing=True, pattern=r".status"))
+@userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.status"))
 async def statususerbot(event):
    await event.edit("userbot online")
 
+@userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.name"))
+async def nameprofilyou(event):
+   x = event.text.split(" ", maxsplit=1)[1]
+    result = await userbot_personal(functions.account.UpdateProfileRequest(
+          first_name=x,
+      ))
+    await event.edit(f"nome messo come **{x}**")
 
 
 
