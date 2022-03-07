@@ -33,7 +33,7 @@ async def usbot():
 
   @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.stopuserbot"))
   async def _stopuserbot(event):
-    await event.edit("fra 3 secondi andra offline l'userbot")
+    await event.edit("in 3 seconds the userbot will go offline")
     await userbot_personal.disconnect()
     await asyncio.sleep(3)
 
