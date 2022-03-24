@@ -5,7 +5,7 @@
 Example: py html php ecc.
 """
 
-@userbot_personal.on(events.NewMessage(pattern="ttf ?(.*)"))
+@userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.ttf ?(.*)"))
 async def get(event):
     name = event.text[4:]
     m = await event.get_reply_message()
