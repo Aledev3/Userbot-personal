@@ -1,6 +1,7 @@
 from asyncio.subprocess import PIPE as asyncPIPE
 import io
 import os
+import time
 
 
 @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.exec")
