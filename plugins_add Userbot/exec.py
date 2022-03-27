@@ -1,3 +1,4 @@
+from asyncio.subprocess import PIPE as asyncPIPE
 import io
 import os
 
