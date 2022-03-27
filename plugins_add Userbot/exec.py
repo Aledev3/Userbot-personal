@@ -4,6 +4,8 @@ import os
 import time
 
 
+MAX_MESSAGE_SIZE_LIMIT = 4095
+
 @userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.exec")
 async def _(event):
     if event.fwd_from or event.via_bot_id:
