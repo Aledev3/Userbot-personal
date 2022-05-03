@@ -1,4 +1,4 @@
 from telethon import eventi
 
 
-@userbot_personal.on(eventi.NewMessage(outgoing=True
+@userbot_personal.on(events.NewMessage(outgoing=True, pattern=r"\.bye"))
