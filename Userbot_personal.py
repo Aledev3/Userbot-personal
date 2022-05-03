@@ -2,11 +2,12 @@ from telethon import TelegramClient, events, sync
 from telethon import Button
 from telethon import functions, types
 from datetime import datetime
+from pathlib import Path
 
 import os
 import asyncio
 import telethon
-#import pa
+
 
 
 API_ID = 77362
