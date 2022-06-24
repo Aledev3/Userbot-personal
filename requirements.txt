@@ -1,4 +1,4 @@
-telethon
+newthon
 ffmpeg
-pillow
+Pillow
 sqlite3 
