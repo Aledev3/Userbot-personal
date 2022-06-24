@@ -1,2 +1,4 @@
 telethon
 ffmpeg
+pillow
+sqlite3 
