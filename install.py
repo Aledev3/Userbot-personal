@@ -9,6 +9,6 @@ if os.access('install.py', os.W_OK):
     os.system(cmd)
     subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
     os.system(mvenv)
-    print("Done!")
+    print("Done! Use python3 userbot.py to start your personal userbot.")
 else:
     print("Some permissions are missing. Try chmod +x install.py")
