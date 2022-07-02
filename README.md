@@ -21,6 +21,7 @@ How? Go to [My Telegram](https://my.telegram.org/auth) Auth yourself create an a
 ### AUTOMATIC MODE:
 1. chmod +x install.py
 2. python3 install.py
+3. Done!
 
 ## SETUP ON HEROKU
 
