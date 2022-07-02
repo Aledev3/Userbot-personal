@@ -6,6 +6,7 @@ Bot made with Telethon API, so use telethon to create your own commands.
 ## TELEGRAM SETUP (tgstep)
 
 You can use our API and HASH ID (From our application) or use yours.
+
 How? Go to [My Telegram](https://my.telegram.org/auth) Auth yourself create an app, and put API_ID and API_HASH in .env_example
 
 ## SETUP ON VPS
