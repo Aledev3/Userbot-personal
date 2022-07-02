@@ -2,5 +2,6 @@ newthon
 ffmpeg
 Pillow
 python-dotenv
+psutil
 requests
 telethon
