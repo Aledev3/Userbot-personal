@@ -3,12 +3,17 @@
 A simple base to create your personal userbot for Telegram.
 Bot made with Telethon API, so use telethon to create your own commands.
 
+## TELEGRAM SETUP (tgstep)
+
+You can use our API and HASH ID (From our application) or use yours.
+How? Go to [My Telegram](https://my.telegram.org/auth) Auth yourself create an app, and put API_ID and API_HASH in .env_example
+
 ## SETUP ON VPS
 
 1. sudo apt update && sudo apt upgrade
 2. sudo apt install python3 && sudo apt install python3-pip && sudo apt install git openssh
 3. git clone https://github.com/Aledev3/Userbot-personal.git && cd Userbot-personal
-4. sudo pip install -r requirements.txt
+4. sudo pip install -r requirements.txt && sudo mv .env_example .env (Go to line 9 in this README)
 5. Done!
 
 ## SETUP ON HEROKU
@@ -20,7 +25,7 @@ Coming Soon - we will add a button to deploy automatically to Heroku
 1. pkg update && pkg upgrade
 2. pkg install python && apt install git openssh
 3. pip install --upgrade pip && git clone https://github.com/Aledev3/Userbot-personal.git && cd Userbot-personal
-4. pip install -r requirements.txt
+4. pip install -r requirements.txt && mv .env_example .env (Go to line 9 in this README)
 5. Done!
 
 ## CREDITS 
