@@ -1,14 +1,20 @@
 import subprocess
 import sys
 import os
+import psutil
+
+from sys import platform
 
 cmd = "sudo apt update && sudo apt upgrade && sudo apt install python3 && sudo apt install python3-pip"
 mvenv = "sudo mv .env_example .env"
- 
-if os.access('install.py', os.W_OK):
-    os.system(cmd)
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-    os.system(mvenv)
-    print("Done! Use python3 userbot.py to start your personal userbot.")
+
+if psutil.LINUX:
+    if os.access('install.py', os.W_OK):
+        os.system(cmd)
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+        os.system(mvenv)
+        print("\n\n\nDone! Use python3 userbot.py to start your personal userbot.\n\nScript made with ❤ by @OgDeltwin")
+    else:
+        print("Some permissions are missing. Retry with chmod +x install.py")
 else:
-    print("Some permissions are missing. Try chmod +x install.py")
+    print("This script can't run with your OS. Please run this script on OS with APT as package manager.")
