@@ -1,17 +1,35 @@
 # Userbot-personal
-This code is free it is not a code that is very long
 
+A simple base to create your personal userbot for Telegram.
+Bot made with Telethon API, so use telethon to create your own commands.
 
-### Self Host
-- Termux or Heroku
+## SETUP ON VPS
 
+1. sudo apt update && sudo apt upgrade
+2. sudo apt install python3 && sudo apt install python3-pip && sudo apt install git openssh
+3. git clone https://github.com/Aledev3/Userbot-personal.git && cd Userbot-personal
+4. sudo pip install -r requirements.txt
+5. Done!
 
-## Description
-- The license will not be there
+## SETUP ON HEROKU
 
-- I will only wear two or three things but I will not put much
+Coming Soon - we will add a button to deploy automatically to Heroku
 
+## SETUP ON TERMUX 
 
-## Support Group
+1. pkg update && pkg upgrade
+2. pkg install python && apt install git openssh
+3. pip install --upgrade pip && git clone https://github.com/Aledev3/Userbot-personal.git && cd Userbot-personal
+4. pip install -r requirements.txt
+5. Done!
 
-[Support Group](https://t.me/+KBsgKABzPBU0MWNk)
+## CREDITS 
+
+USERBOT MADE WITH ❤️ BY [AleDev](https://t.me/Muffa0)
+
+UPDATED WITH ❤️ BY [Deltwin](https://t.me/OgDeltwin)
+
+You need help? [Support Group](https://t.me/+KBsgKABzPBU0MWNk)
+
+## Advertising
+If you get banned, are not our problems.
