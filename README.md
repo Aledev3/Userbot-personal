@@ -19,7 +19,7 @@ How? Go to [My Telegram](https://my.telegram.org/auth) Auth yourself create an a
 5. Done!
 
 ### AUTOMATIC MODE:
-1. chmod +x install.py
+1. sudo apt install python3 && chmod +x install.py
 2. python3 install.py
 3. Done!
 
