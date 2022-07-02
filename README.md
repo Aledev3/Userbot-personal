@@ -3,7 +3,7 @@
 A simple base to create your personal userbot for Telegram.
 Bot made with Telethon API, so use telethon to create your own commands.
 
-## TELEGRAM SETUP (tgstep)
+## TELEGRAM SETUP
 
 You can use our API and HASH ID (From our application) or use yours.
 
