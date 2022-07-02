@@ -1,4 +1,5 @@
 newthon
 ffmpeg
 Pillow
-sqlite3 
+sqlite3
+dotenv
