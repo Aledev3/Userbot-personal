@@ -11,11 +11,16 @@ How? Go to [My Telegram](https://my.telegram.org/auth) Auth yourself create an a
 
 ## SETUP ON VPS
 
+### MANUAL MODE:
 1. sudo apt update && sudo apt upgrade
 2. sudo apt install python3 && sudo apt install python3-pip && sudo apt install git openssh
 3. git clone https://github.com/Aledev3/Userbot-personal.git && cd Userbot-personal
 4. sudo pip install -r requirements.txt && sudo mv .env_example .env (Go to line 9 in this README)
 5. Done!
+
+### AUTOMATIC MODE:
+1. chmod +x install.py
+2. python3 install.py
 
 ## SETUP ON HEROKU
 
