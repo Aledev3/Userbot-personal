@@ -17,4 +17,4 @@ if psutil.LINUX:
     else:
         print("Some permissions are missing. Retry with chmod +x install.py")
 else:
-    print("This script can't run with your OS. Please run this script on OS with APT as package manager.")
+    print("This script can't run on your OS. Please run this script on OS with APT as package manager.")
